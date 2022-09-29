@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/animations.css" />
+        <link rel="stylesheet" href="./styles/navBar.css" />
+        <link rel="stylesheet" href="./styles/toolbar.css" />
+
+        <title>Chat App</title>
+
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="./client.js"></script>
+    </head>
+    <body>
+        <main>
+            <nav class="flex nav animate delay-medium">
+                <ul class="list">
+                    <li class="tooltip">
+                        <img src="./assets/gear-fill.svg" class="setting-ico" alt="settings" />
+                        <span class="tooltip-text tooltip-top"><p class="text-small">Toggle Settings</p></span>
+                    </li>
+                </ul>
+            </nav>
+            
+            <article>
+                <section>
+                    <div id="message"></div>
+                </section>
+            </article>
+
+            <footer>
+                <form id="send" class="flex animate">
+                    <input type="text" placeholder="Message..." id="msg-input" class="input-msg" />
+                    <button type="submit" id="btn-send" class="send-msg tooltip animate delay">
+                        <img src="./assets/arrow-return-right.svg" class="ico" alt="send" />
+                        <span class="tooltip-text tooltip-bottom">Send Message</span>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </body>
+</html>

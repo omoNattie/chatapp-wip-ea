@@ -1,0 +1,57 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+main footer {
+    margin-top: auto;
+}
+
+.flex {
+    display: flex;
+
+    padding: 15px;
+}
+
+.input-msg {
+    border: none;
+    border-radius: 7px;
+
+    padding: 10px;
+
+    width: 100%;
+
+    background-color: #3a3939;
+    color: rgb(255, 255, 255);
+}
+
+.input-msg:focus {
+    outline: none;
+}
+
+.send-msg {
+    margin-left: 1rem;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: #8a1576;
+
+    transition: 0.2s;
+}
+
+.send-msg:active {
+    background-color: #af1b97;
+}
+
+.send-msg:hover {
+    background-color: #9e1687;
+}
+
+.ico {
+    padding-top: 4px;
+}

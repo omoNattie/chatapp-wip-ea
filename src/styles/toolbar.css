@@ -1,0 +1,35 @@
+.tooltip .tooltip-text {
+    visibility: hidden;
+
+    width: 120px;
+
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    border-radius: 10px;
+
+    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    position: absolute;
+
+    font-family: open-sans, serif; 
+}
+
+.tooltip .tooltip-bottom {
+    right: 1rem;
+    bottom: 4rem;
+
+}
+
+.tooltip .tooltip-top {
+    right: 1rem;
+    top: 3.5rem;
+
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
